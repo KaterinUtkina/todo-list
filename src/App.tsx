@@ -13,19 +13,19 @@ function App() {
 
   const toggleTodo = useCallback((id: number) => {
     setTodos(prev =>
-      prev.map(todo => (todo.id === id ? { ...todo, completed: !todo.completed } : todo))
+      prev.map(todoItem => (todoItem.id === id ? { ...todoItem, completed: !todoItem.completed } : todoItem))
     );
   }, []);
 
   const clearCompleted = useCallback(() => {
-    setTodos(prev => prev.filter(todo => !todo.completed));
+    setTodos(prev => prev.filter(todoItem => !todoItem.completed));
   }, []);
 
   const filters: { key: TodoListFilter; data: Todo[] }[] = useMemo(() => {
     return [
       { key: TodoListFilter.ALL, data: todos },
-      { key: TodoListFilter.ACTIVE, data: todos.filter(t => !t.completed) },
-      { key: TodoListFilter.COMPLETED, data: todos.filter(t => t.completed) },
+      { key: TodoListFilter.ACTIVE, data: todos.filter(todoItem => !todoItem.completed) },
+      { key: TodoListFilter.COMPLETED, data: todos.filter(todoItem => todoItem.completed) },
     ];
   }, [todos]);
 
