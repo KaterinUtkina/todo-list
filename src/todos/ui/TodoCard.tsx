@@ -61,7 +61,7 @@ const TodoCard = memo(({
         {/* Footer */}
         {isActive && (
           <div className="flex justify-between items-center text-sm text-gray-400 mt-auto p-4">
-            <span>{completedTodosCount} {getPluralForm(completedTodosCount, ['item', 'items', 'items'])} left</span>
+            <span className={'w-[100px] inline-block'}>{completedTodosCount} {getPluralForm(completedTodosCount, ['item', 'items', 'items'])} left</span>
             <div className="space-x-2">
               {([TodoListFilter.ALL, TodoListFilter.ACTIVE, TodoListFilter.COMPLETED]).map(filterItem => (
                 <button
