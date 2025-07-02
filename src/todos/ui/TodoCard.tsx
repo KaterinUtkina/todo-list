@@ -67,7 +67,7 @@ const TodoCard = memo(({
                 <button
                   key={filterItem}
                   onClick={() => onChangeFilter(filterItem)}
-                  className={`cursor-pointer px-2 py-1 border rounded ${
+                  className={`cursor-pointer px-2 py-1 border rounded first-letter:uppercase ${
                     currentFilter === filterItem ? 'border-gray-200' : 'border-transparent'
                   }`}
                 >

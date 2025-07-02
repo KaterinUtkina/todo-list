@@ -16,7 +16,7 @@ const TodoInput = memo(({ onAdd }: Props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} data-testid="todo-form">
       <input
         className="w-full p-4 text-lg border-b border-gray-200 outline-none placeholder:text-gray-300 placeholder:italic"
         placeholder="What needs to be done?"

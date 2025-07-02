@@ -70,3 +70,19 @@ yarn dev
 ```
 
 Open your browser and navigate to http://localhost:3000 to see the application running locally.
+
+### Running Tests
+
+To run the test suite, use the following command:
+
+Using npm:
+
+```bash
+npm test
+```
+
+Using yarn:
+
+```bash
+yarn test
+```
