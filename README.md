@@ -10,6 +10,7 @@ Todo List is a simple React application for managing tasks with filtering by sta
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [Usage](#usage)
+    - [Running Tests](#running-tests)
 
 ## Features
 
