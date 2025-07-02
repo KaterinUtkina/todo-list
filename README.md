@@ -23,7 +23,7 @@ Todo List is a simple React application for managing tasks with filtering by sta
 
 ## Live Demo
 
-Check out the live demo of the Todo List: [Chat Simulator Live Demo](https://katerinutkina.github.io/todo-list/)
+Check out the live demo: [Todo List Live Demo](https://katerinutkina.github.io/todo-list/)
 
 ## Getting Started
 
